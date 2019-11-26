@@ -29,6 +29,16 @@ public class ServiceController {
 	}
 	
 
+	
+	@GetMapping("/service/feature1")
+	public String goService_feature1() {
+		
+		
+		return "this is my feature 1  ";
+		
+		
+	}
+	
 
 
 
