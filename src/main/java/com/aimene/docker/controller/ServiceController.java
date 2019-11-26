@@ -33,7 +33,7 @@ public class ServiceController {
 	@GetMapping("/service/feature1")
 	public String goService_feature1() {
 		
-		
+		// add this comment ligne  
 		return "this is my feature 1  ";
 		
 		
