@@ -20,6 +20,13 @@ public class ServiceController {
 		
 		
 	}
+	
+	
+	
+	
+	
+	
+	
 	@GetMapping("/service/go")
 	public String goService() {
 		
@@ -29,6 +36,15 @@ public class ServiceController {
 		
 	}
 	
+
+	@GetMapping("/service/gogo")
+	public String goService3() {
+		
+		
+		return "this is a  3 rd go service method ";
+		
+		
+	}
 	
 	
 	
