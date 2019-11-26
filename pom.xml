@@ -33,10 +33,40 @@
 
 	<build>
 		<plugins>
+		
+		 <plugin>
+        <groupId>external.atlassian.jgitflow</groupId>
+        <artifactId>jgitflow-maven-plugin</artifactId>
+        <version>1.0-m5.1</version>
+        <configuration>
+            <flowInitContext>
+                <masterBranchName>master</masterBranchName>
+                <developBranchName>development</developBranchName>
+                <featureBranchPrefix>feature-</featureBranchPrefix>
+                <releaseBranchPrefix>release-</releaseBranchPrefix>
+                <hotfixBranchPrefix>hotfix-</hotfixBranchPrefix>
+                <versionTagPrefix>version-</versionTagPrefix>
+            </flowInitContext>
+            <username>aymanemoc1@gmail.com</username>
+            <password>a312aymane</password>
+            <noDeploy>true</noDeploy>
+            <squash>true</squash>
+            <scmCommentPrefix>[RELEASE] </scmCommentPrefix>
+        </configuration>
+    </plugin>
+		
+		
+		
+		
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			
+			
+			
+			
+			
 		</plugins>
 	</build>
 
@@ -51,7 +81,7 @@
 			<name>Spring Snapshots</name>
 			<url>https://repo.spring.io/snapshot</url>
 			<snapshots>
-				<enabled>true</enabled>
+				<enabled>flase</enabled>
 			</snapshots>
 		</repository>
 	</repositories>
@@ -66,7 +96,7 @@
 			<name>Spring Snapshots</name>
 			<url>https://repo.spring.io/snapshot</url>
 			<snapshots>
-				<enabled>true</enabled>
+				<enabled>false</enabled>
 			</snapshots>
 		</pluginRepository>
 	</pluginRepositories>
