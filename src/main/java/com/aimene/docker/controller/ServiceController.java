@@ -11,6 +11,7 @@ public class ServiceController {
 	
 	
 	
+	
 	@GetMapping("/service/{name}")
 	public String getService(@PathVariable("name") String name) {
 		
@@ -19,4 +20,17 @@ public class ServiceController {
 		
 		
 	}
+	@GetMapping("/service/go")
+	public String goService() {
+		
+		
+		return "this is a go service method ";
+		
+		
+	}
+	
+	
+	
+	
+	
 }
