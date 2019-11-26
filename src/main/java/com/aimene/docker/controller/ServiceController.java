@@ -11,6 +11,7 @@ public class ServiceController {
 	
 	
 	
+
 	@GetMapping("/service/go")
 	public String goService() {
 		
@@ -24,28 +25,20 @@ public class ServiceController {
 	@GetMapping("/service/gogo")
 	public String goService3() {
 		
-		
-		return "this is a  3 rd go service method ";
-		
-		
+	return "this is the 3 rd service method ";
 	}
-	
-	
-	
+
 	@GetMapping("/service/{name}")
 	public String getService(@PathVariable("name") String name) {
 		
 		
-		return "welcome to our  spring boot service "+name;
+		return "this is a  2 rd go service method ";
 		
 		
 	}
 
 	
-	
-	
-	
-	
-	
+
+
 
 }
