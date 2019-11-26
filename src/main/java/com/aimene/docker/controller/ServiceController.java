@@ -11,22 +11,6 @@ public class ServiceController {
 	
 	
 	
-	
-	@GetMapping("/service/{name}")
-	public String getService(@PathVariable("name") String name) {
-		
-		
-		return "welcome to our  spring boot service "+name;
-		
-		
-	}
-	
-	
-	
-	
-	
-	
-	
 	@GetMapping("/service/go")
 	public String goService() {
 		
@@ -48,5 +32,20 @@ public class ServiceController {
 	
 	
 	
+	@GetMapping("/service/{name}")
+	public String getService(@PathVariable("name") String name) {
+		
+		
+		return "welcome to our  spring boot service "+name;
+		
+		
+	}
+
 	
+	
+	
+	
+	
+	
+
 }
