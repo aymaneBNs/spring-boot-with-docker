@@ -29,7 +29,24 @@ public class ServiceController {
 	}
 	
 
+	
+	@GetMapping("/service/feature1")
+	public String goService_feature1() {
+		
+		// add this comment ligne  
+		return "this is my feature 1  ";
+		
+		
+	}
+	
 
-
+	@GetMapping("/newservice")
+	public String newService() {
+	
+		// add this comment ligne  
+		return "hello from my new service  ";
+		
+		
+	}
 
 }
