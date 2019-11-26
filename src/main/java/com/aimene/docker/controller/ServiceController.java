@@ -40,6 +40,13 @@ public class ServiceController {
 	}
 	
 
-
+	@GetMapping("/newservice")
+	public String newService() {
+		
+		// add this comment ligne  
+		return "hello from my new service  ";
+		
+		
+	}
 
 }
