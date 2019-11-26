@@ -8,13 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class ServiceController {
 
 	
-	
-	
-	
-<<<<<<< HEAD
-
-=======
-	
 	@GetMapping("/service/{name}")
 	public String getService(@PathVariable("name") String name) {
 		
@@ -26,11 +19,6 @@ public class ServiceController {
 	
 	
 	
-	
-	
-	
-	
->>>>>>> parent of cf8b62f... master commit 4 <add a 3 rd  service method and fix conflit prblm>
 	@GetMapping("/service/go")
 	public String goService() {
 		
@@ -41,30 +29,7 @@ public class ServiceController {
 	}
 	
 
-	@GetMapping("/service/gogo")
-	public String goService3() {
-		
-	return "this is the 3 rd service method ";
-	}
-<<<<<<< HEAD
-
-	@GetMapping("/service/{name}")
-	public String getService(@PathVariable("name") String name) {
-		
-		
-		return "this is a  2 rd go service method ";
-		
-		
-	}
-
-	
 
 
 
-=======
-	
-	
-	
-	
->>>>>>> parent of cf8b62f... master commit 4 <add a 3 rd  service method and fix conflit prblm>
 }
