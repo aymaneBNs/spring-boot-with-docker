@@ -48,5 +48,17 @@ public class ServiceController {
 		
 		
 	}
+	
+	@GetMapping("/feature1")
+	public String displayFeature() {
+	
+		// new feature comment 
+		return "this is a new feature   ";
+		
+		
+	}
+	
+	
+	
 
 }
